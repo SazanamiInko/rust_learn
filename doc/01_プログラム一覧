@@ -1,16 +1,21 @@
 01_PRGシリーズ
 
-pg0001
+pg0001_std_print
  
  標準出力をするプログラム
 
-pgooo2
+pg0002_val
 
  Rustの変数を学習
 
-pgooo3
+pg0003_stdin
 
  標準入力を学習
+
+pg0004_mut_x
+  
+  所有権エラー
+  *ビルドできません
 
 02_TRシリーズ
 
