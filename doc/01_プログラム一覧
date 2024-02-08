@@ -119,11 +119,15 @@ pg0029_cmdline
 
 pg0030_if
 
- if文
+ 分岐（条件一致）
 
 pg0031_else
 
- else
+ 分岐（条件不一致）
+
+pg00032_elseif
+
+ 分岐（他条件）
 
 02_TRシリーズ
 
