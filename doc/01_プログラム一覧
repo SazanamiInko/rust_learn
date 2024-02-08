@@ -72,6 +72,10 @@ pg0017_increment
 pg0018_fn
 
  関数
+
+pg0019_power_i32
+
+ べき乗(i32)
  
 
 
