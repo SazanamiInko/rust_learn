@@ -39,7 +39,11 @@ pg0009_calc_ope
 
 pg0010_fmt_std_print_1
 
- 
+ n進法表示
+
+pg0011_num_literal
+
+ 数値リテラル
 
 
 02_TRシリーズ
