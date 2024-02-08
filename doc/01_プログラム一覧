@@ -28,6 +28,15 @@ pg006_val_kind
 pg0007_boolean
 
  論理型
- 
+
+pg0008_char
+
+ 文字型
+
+pg0009_calc_ope
+
+ 四則演算
+
+
 02_TRシリーズ
 
