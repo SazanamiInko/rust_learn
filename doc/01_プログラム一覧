@@ -61,5 +61,9 @@ pg0015_calc_bit
   
  ビット演算
 
+pg0016_calc_shift
+ 
+ シフト演算
+
 02_TRシリーズ
 
