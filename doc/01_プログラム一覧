@@ -65,9 +65,16 @@ pg0016_calc_shift
  
  シフト演算
 
- pg0017_increment
+pg0017_increment
 
-  インクリメント
+ インクリメント
+
+pg0018_fn
+
+ 関数
+ 
+
+
 
 02_TRシリーズ
 
