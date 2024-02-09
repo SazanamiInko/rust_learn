@@ -54,5 +54,6 @@
  pg0053_append_file:ファイル追記オープン
  pg0054_read_line:行読み込み
  pg0055_tuple_fn:タプルを返す関数
+ pg0056_tuple_vec:タプルを格納するベクター
 02_TRシリーズ
 
