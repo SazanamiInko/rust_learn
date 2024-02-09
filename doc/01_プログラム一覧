@@ -1,155 +1,42 @@
 01_PRGシリーズ
-
-pg0001_std_print
- 
- 標準出力をするプログラム
-
-pg0002_val
-
- Rustの変数を学習
-
-pg0003_stdin
-
- 標準入力を学習
-
-pg0004_mut_x
-  
- 所有権エラー
- *ビルドできません
-
-pg0005_mut
-
- ミュータブル(所有権エラー解決)
-
-pg006_val_kind
-
- 様々な変数
-
-pg0007_boolean
-
- 論理型
-
-pg0008_char
-
- 文字型
-
-pg0009_calc_ope
-
- 四則演算
-
-pg0010_fmt_std_print_1
-
- n進法表示
-
-pg0011_num_literal
-
- 数値リテラル
-
-pg0012_fmt_std_print_2
-
- 0埋め・桁梅表示
-
-pg0013_fmt_std_print_3
-
- 文字寄せ表示
-
-pg0014_fmt_std_print_4
-
- 引数指定表示
-
-pg0015_calc_bit
-  
- ビット演算
-
-pg0016_calc_shift
- 
- シフト演算
-
-pg0017_increment
-
- インクリメント
-
-pg0018_fn
-
- 関数
-
-pg0019_power_i32
-
- べき乗(i32)
- 
-pg0020_power_f32
-
- べき乗(f32)
-
-pg0021_fmt_std_print_5
-
- 浮動小数点表示
-
-pg0022_fn_return
-
- 戻りがある関数
-
-pg0023_static
-
- 静的変数
-
-pg0024_const
-
- 定数
-
-pg0025_ref_arg
-
- 参照渡し
-
-pg0026_str_to_num
-
- 文字→数字変換
- 
-pg0027_trim
-
- スペース削除
-
-pg0028_onerror
-
- エラー処理
-
-pg0029_cmdline
-
- コマンドライン
-
-pg0030_if
-
- 分岐（条件一致）
-
-pg0031_else
-
- 分岐（条件不一致）
-
-pg00032_elseif
-
- 分岐（他条件）
-
-pg0033_array
-
- 配列
-
-pg0034_array_array
- 
- 多重配列
-
-pg0035_array_out_of_index_X
-
- 添え字範囲外
- *ビルドできません
-
-pg0036_mut_array
-
- ミュータブル配列
-
-pg0037_for
-
-for文
-
+ pg0001_std_print:標準出力をするプログラム
+ pg0002_val:Rustの変数を学習
+ pg0003_stdin:標準入力を学習
+ pg0004_mut_x:所有権エラー *ビルドできません
+ pg0005_mut:ミュータブル(所有権エラー解決)
+ pg006_val_kind:様々な変数
+ pg0007_boolean:論理型
+ pg0008_char:文字型
+ pg0009_calc_ope:四則演算
+ pg0010_fmt_std_print_1:n進法表示
+ pg0011_num_literal:数値リテラル
+ pg0012_fmt_std_print_2:0埋め・桁梅表示
+ pg0013_fmt_std_print_3:文字寄せ表示
+ pg0014_fmt_std_print_4:引数指定表示
+ pg0015_calc_bit:ビット演算
+ pg0016_calc_shift:シフト演算
+ pg0017_increment:インクリメント
+ pg0018_fn:関数
+ pg0019_power_i32:べき乗(i32)
+ pg0020_power_f32:べき乗(f32)
+ pg0021_fmt_std_print_5:浮動小数点表示
+ pg0022_fn_return:戻りがある関数
+ pg0023_static:静的変数
+ pg0024_const:定数
+ pg0025_ref_arg:参照渡し
+ pg0026_str_to_num:文字→数字変換
+ pg0027_trim:スペース削除
+ pg0028_onerror:エラー処理
+ pg0029_cmdline:コマンドライン
+ pg0030_if:分岐（条件一致）
+ pg0031_else:分岐（条件不一致）
+ pg00032_elseif:分岐（他条件）
+ pg0033_array:配列
+ pg0034_array_array:多重配列
+ pg0035_array_out_of_index_X:添え字範囲外 *ビルドできません
+ pg0036_mut_array:ミュータブル配列
+ pg0037_for:for文
+ pg0038_for_for:多重for文
 
 
 
