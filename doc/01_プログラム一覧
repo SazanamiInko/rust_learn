@@ -51,6 +51,7 @@
  pg0050_bin_file_write:バイナリ書き込み
  pg0051_vector:ベクター
  pg0052_tuple:タプル
+ pg0053_append_file:ファイル追記オープン
 
 02_TRシリーズ
 
