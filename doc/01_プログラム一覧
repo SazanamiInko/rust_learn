@@ -45,5 +45,6 @@
  pg0044_slice:配列スライス
  pg0045_text_file_read:テキストファイル読み込み
  pg0046_text_file_write:テキストファイル書き込み
+ pg0047_datetime:現在時刻
 02_TRシリーズ
 
