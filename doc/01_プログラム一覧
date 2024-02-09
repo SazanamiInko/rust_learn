@@ -55,5 +55,6 @@
  pg0054_read_line:行読み込み
  pg0055_tuple_fn:タプルを返す関数
  pg0056_tuple_vec:タプルを格納するベクター
+ pg0057_closure:無名関数
 02_TRシリーズ
 
