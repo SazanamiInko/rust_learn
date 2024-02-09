@@ -53,5 +53,6 @@
  pg0052_tuple:タプル
  pg0053_append_file:ファイル追記オープン
  pg0054_read_line:行読み込み
+ pg0055_tuple_fn:タプルを返す関数
 02_TRシリーズ
 
