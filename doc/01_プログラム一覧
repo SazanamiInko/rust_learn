@@ -142,6 +142,10 @@ pg0035_array_out_of_index_X
  添え字範囲外
  *ビルドできません
 
+pg0036_mut_array
+
+ ミュータブル配列
+
 
 02_TRシリーズ
 
