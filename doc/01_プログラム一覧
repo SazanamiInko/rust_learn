@@ -47,5 +47,6 @@
  pg0046_text_file_write:テキストファイル書き込み
  pg0047_datetime:現在時刻
  pg0048_rand:乱数
+ pg0049_bin_file_read:バイナリ読み込み
 02_TRシリーズ
 
