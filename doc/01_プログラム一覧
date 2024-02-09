@@ -52,6 +52,6 @@
  pg0051_vector:ベクター
  pg0052_tuple:タプル
  pg0053_append_file:ファイル追記オープン
-
+ pg0054_read_line:行読み込み
 02_TRシリーズ
 
