@@ -137,5 +137,11 @@ pg0034_array_array
  
  多重配列
 
+pg0035_array_out_of_index_X
+
+ 添え字範囲外
+ *ビルドできません
+
+
 02_TRシリーズ
 
