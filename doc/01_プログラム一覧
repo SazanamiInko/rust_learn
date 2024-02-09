@@ -43,6 +43,7 @@
  pg0042_while_while:多重while文
  pg0043_if_ope:3項演算子
  pg0044_slice:配列スライス
-
+ pg0045_text_file_read:テキストファイル読み込み
+ pg0046_text_file_write:テキストファイル書き込み
 02_TRシリーズ
 
