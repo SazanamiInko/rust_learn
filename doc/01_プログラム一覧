@@ -40,6 +40,7 @@
  pg0039_loop:loop文
  pg0040_loop_loop:多重loop文
  pg0041_while:while文
+ pg0042_while_while:多重while文
 
 
 
