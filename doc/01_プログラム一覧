@@ -50,7 +50,7 @@
  pg0049_bin_file_read:バイナリ読み込み
  pg0050_bin_file_write:バイナリ書き込み
  pg0051_vector:ベクター
- 
+ pg0052_tuple:タプル
 
 02_TRシリーズ
 
