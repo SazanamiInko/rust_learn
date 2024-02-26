@@ -57,6 +57,7 @@
  pg0056_tuple_vec:タプルを格納するベクター
  pg0057_closure:無名関数
  pg0060_match:多分岐
+ pg0061_match_guard:多分岐(詳細条件)
  pg0062_enum:列挙体
 02_TRシリーズ
 
