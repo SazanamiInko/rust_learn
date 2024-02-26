@@ -59,5 +59,6 @@
  pg0060_match:多分岐
  pg0061_match_guard:多分岐(詳細条件)
  pg0062_enum:列挙体
+ PG0063_hash_map:ハッシュマップ
 02_TRシリーズ
 
