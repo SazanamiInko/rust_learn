@@ -60,5 +60,7 @@
  pg0061_match_guard:多分岐(詳細条件)
  pg0062_enum:列挙体
  PG0063_hash_map:ハッシュマップ
+ pg0064_str_to_date:文字列->日時（標準）
+ pg0065_str_to_date2:文字列->日時（日本時間）
 02_TRシリーズ
 
