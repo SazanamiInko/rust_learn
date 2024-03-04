@@ -64,5 +64,6 @@
  pg0065_str_to_date2:文字列->日時（日本時間）
  pg0066_datetime_add:日時の加算
  pg0067_format_date:日時の表示形式
+ pg068_term_calc:日時の差分
 02_TRシリーズ
 
