@@ -66,6 +66,7 @@
  pg0067_format_date:日時の表示形式
  pg068_term_calc:日時の差分
  pg0069_process:メモ帳を起動
+ pg0070_make_CSV:CSVの作成
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
