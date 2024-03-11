@@ -71,6 +71,7 @@
  pg0072_sleep:停止
  pg0073_uuid:uuidを発行
  pg0074_filelist:ファイル一覧
+ pg0075_mkdir:ディレクトリ作成
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
