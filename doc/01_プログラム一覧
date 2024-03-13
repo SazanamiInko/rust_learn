@@ -72,6 +72,8 @@
  pg0073_uuid:uuidを発行
  pg0074_filelist:ファイル一覧
  pg0075_mkdir:ディレクトリ作成
+ pg0076_concat_X:文字列の結合（ビルド失敗）
+ pg0077_concat:文字列の結合
  pg0078_delete_file:ファイル削除
  
 02_TRシリーズ->応用篇
