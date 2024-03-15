@@ -80,6 +80,7 @@
  pg0081_path_combine:パスの結合
  pg0082_split:文字列の分解
  pg0083_parent:親フォルダ
+ pg0084_file_copy:ファイルコピー
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
