@@ -72,11 +72,12 @@
  pg0073_uuid:uuidを発行
  pg0074_filelist:ファイル一覧
  pg0075_mkdir:ディレクトリ作成
- pg0076_concat_X:文字列の結合（ビルド失敗）
+ pg0076_concat_X:文字列の結合（ビルドできません）
  pg0077_concat:文字列の結合
  pg0078_delete_file:ファイル削除
  pg0079_str_delete:特定文字列の削除
- tr0080_change_str;特定文字の置換
+ PG0080_change_str;特定文字の置換
+ pg0081_path_combine:パスの結合
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
