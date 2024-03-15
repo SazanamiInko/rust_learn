@@ -78,6 +78,7 @@
  pg0079_str_delete:特定文字列の削除
  PG0080_change_str;特定文字の置換
  pg0081_path_combine:パスの結合
+ pg0082_split:文字列の分解
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
