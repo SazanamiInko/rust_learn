@@ -83,6 +83,7 @@
  pg0084_file_copy:ファイルコピー
  pg0085_file_move:ファイル移動
  pg0086_file_time_stamp:ファイルのタイムスタンプ
+ pg0087_if_let_func:if let構文
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
