@@ -86,6 +86,7 @@
  pg0087_if_let_func:if let構文
  pg0088_for_non_iterator:for文古典的
  pg0089_recall_fn：再帰呼び出し
+ pg0090_assert:検証
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
