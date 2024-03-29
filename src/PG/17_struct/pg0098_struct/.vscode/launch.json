@@ -1,0 +1,45 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pg0091_struct'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pg0091_struct",
+                    "--package=pg0091_struct"
+                ],
+                "filter": {
+                    "name": "pg0091_struct",
+                    "kind": "bin"
+                }
+            },
+            "args":  ["01","02","3400"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pg0091_struct'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pg0091_struct",
+                    "--package=pg0091_struct"
+                ],
+                "filter": {
+                    "name": "pg0091_struct",
+                    "kind": "bin"
+                }
+            },
+            "args": ["01","02","3400"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
