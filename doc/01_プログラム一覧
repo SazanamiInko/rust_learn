@@ -92,6 +92,8 @@
  pg0093_array_init:配列の初期化
  pg0094_char_add_x:文字型の加算（RUSTの仕様上できません、ビルドできません）
  pg0095_cast:キャスト
+ pg0096_delete_file:ファイル削除
+ pg0097_file_new_open:なかったらファイル作成
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
