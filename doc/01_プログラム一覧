@@ -97,6 +97,7 @@
  pg0098_struct:構造体
  pg0099_beep:ビープ音(Windows API)
  pg0100_mod:モジュール分割
+ pg0101_logistic:対数
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
