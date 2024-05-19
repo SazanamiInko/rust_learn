@@ -111,6 +111,7 @@
  pg0112_round:四捨五入
  pg00114_ground_mod:モジュールの復習
  pg0115_struct_method:メソッド付き構造体
+ pg00116_struct_consts:定数の構造体
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
