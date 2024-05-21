@@ -1,0 +1,45 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pg0118_json_read'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pg0118_json_read",
+                    "--package=pg0118_json_read"
+                ],
+                "filter": {
+                    "name": "pg0118_json_read",
+                    "kind": "bin"
+                }
+            },
+            "args": ["W","134","35.8"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pg0118_json_read'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pg0118_json_read",
+                    "--package=pg0118_json_read"
+                ],
+                "filter": {
+                    "name": "pg0118_json_read",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
