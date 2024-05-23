@@ -114,7 +114,8 @@
  pg00116_struct_consts:定数の構造体
  pg0117_json_write:Jsonシリアライズ
  pg0118_json_read:Jsonデシリアライズ
- 
+ pg0119_sqrt:平方根
+
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
  tr0002_Triangle:アルキメデスの法則を用いて斜辺の長さを出力するプログラム
