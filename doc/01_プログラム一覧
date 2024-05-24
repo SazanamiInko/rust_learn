@@ -115,6 +115,7 @@
  pg0117_json_write:Jsonシリアライズ
  pg0118_json_read:Jsonデシリアライズ
  pg0119_sqrt:平方根
+ pg0120_read_config:設定ファイルの読み込み
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
