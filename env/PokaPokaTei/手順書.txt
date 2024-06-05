@@ -1,0 +1,30 @@
+1,次のコマンドを実行してDockerFileをビルドします。
+(DockerFileのあるところで実行)
+
+docker build -t uriagedb-image .
+
+2,次のコマンドでuriagenetが存在するかを確認します。
+
+docker network ls
+
+3,存在しない場合は次のコマンドでnetworkを作成します
+
+docker network create --subnet=192.168.128.0/24 uriagenet
+
+4,コンテナを作成、起動します
+
+docker run --name uriage-container --network uriagenet --ip 192.168.128.100 -p 3306:3306 -d uriagedb-image
+
+5,コンテナに入ります。
+
+docker exec -it uriage-container /bin/bash
+
+6,MySQLにアクセスします。
+
+mysql -u root -p
+
+7,外部環境からアクセスできる管理者を作成します。
+
+CREATE USER 'root'@'%' IDENTIFIED BY 'p1kap1ka';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
