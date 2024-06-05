@@ -117,6 +117,7 @@
  pg0119_sqrt:平方根
  pg0120_read_config:設定ファイルの読み込み
  pd0121_static_page:静的ページの表示
+ pg0122_sql_select:DBのSelect文
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
