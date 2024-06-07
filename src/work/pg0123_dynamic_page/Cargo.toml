@@ -1,9 +1,0 @@
-[package]
-name = "pg0123_dynamic_page"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-actix-web = "4.6.0"
-mysql = "25.0.1"
-tera = "1.20.0"
