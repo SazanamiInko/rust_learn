@@ -120,6 +120,8 @@
  pg0122_sql_select:DBのSelect文
  pg0124_message_box:メッセージボックス
  pg0125_concat2：文字列の結合（配列）
+ pg0126_vec_cat:vectorの結合
+ pg0127_str_push:文字列のアペンド
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
