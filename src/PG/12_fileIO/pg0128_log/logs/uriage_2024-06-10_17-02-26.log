@@ -1,0 +1,4 @@
+[2024-06-10 17:02:26.517290 +09:00] INFO [src\main.rs:25] バッチ処理開始
+[2024-06-10 17:02:26.518588 +09:00] INFO [src\logics\uriage.rs:14] up_uriage:start
+[2024-06-10 17:02:26.518649 +09:00] INFO [src\logics\uriage.rs:26] up_uriage:end
+[2024-06-10 17:02:26.518669 +09:00] INFO [src\main.rs:44] バッチ処理終了

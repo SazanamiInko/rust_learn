@@ -1,0 +1,9 @@
+[package]
+name = "pg0128_log"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+backtrace = "0.3.72"
+flexi_logger = "0.28.2"
+log = "0.4.21"

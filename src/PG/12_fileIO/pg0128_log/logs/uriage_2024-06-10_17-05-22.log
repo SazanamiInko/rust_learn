@@ -1,0 +1,40 @@
+[2024-06-10 17:05:22.011878 +09:00] INFO [src\main.rs:25] バッチ処理開始
+[2024-06-10 17:05:22.013677 +09:00] WARN [src\main.rs:39] モード2は開発中です
+[2024-06-10 17:05:22.013792 +09:00] INFO [src\logics\uriage.rs:14] up_uriage:start
+[2024-06-10 17:05:22.286185 +09:00] ERROR [src\logics\uriage.rs:23] Any { .. }
+   0: backtrace::backtrace::dbghelp64::trace
+             at C:\Users\shigeru suzuki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\backtrace-0.3.72\src\backtrace\dbghelp64.rs:91
+      backtrace::backtrace::trace_unsynchronized<backtrace::capture::impl$1::create::closure_env$0>
+             at C:\Users\shigeru suzuki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\backtrace-0.3.72\src\backtrace\mod.rs:66
+   1: backtrace::backtrace::trace<backtrace::capture::impl$1::create::closure_env$0>
+             at C:\Users\shigeru suzuki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\backtrace-0.3.72\src\backtrace\mod.rs:53
+   2: backtrace::capture::Backtrace::create
+             at C:\Users\shigeru suzuki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\backtrace-0.3.72\src\capture.rs:197
+   3: backtrace::capture::Backtrace::new
+             at C:\Users\shigeru suzuki\.cargo\registry\src\index.crates.io-6f17d22bba15001f\backtrace-0.3.72\src\capture.rs:162
+   4: pg0128_log::logics::uriage::up_uriage
+             at C:\Users\Public\Documents\Work\Docker\RUST\rust_learn\src\work\pg0128_log\src\logics\uriage.rs:22
+   5: pg0128_log::main
+             at c:\Users\Public\Documents\Work\Docker\RUST\rust_learn\src\work\pg0128_log\src\main.rs:42
+   6: core::ops::function::FnOnce::call_once<void (*)(),tuple$<> >
+             at /rustc/9b00956e56009bab2aa15d7bff10916599e3d6d6\library\core\src\ops\function.rs:250
+   7: core::hint::black_box
+             at /rustc/9b00956e56009bab2aa15d7bff10916599e3d6d6\library\core\src\hint.rs:337
+      std::sys_common::backtrace::__rust_begin_short_backtrace<void (*)(),tuple$<> >
+             at /rustc/9b00956e56009bab2aa15d7bff10916599e3d6d6\library\std\src\sys_common\backtrace.rs:155
+   8: std::rt::lang_start::closure$0<tuple$<> >
+             at /rustc/9b00956e56009bab2aa15d7bff10916599e3d6d6\library\std\src\rt.rs:166
+   9: std::rt::lang_start_internal
+             at /rustc/9b00956e56009bab2aa15d7bff10916599e3d6d6/library\std\src\rt.rs:148
+  10: std::rt::lang_start<tuple$<> >
+             at /rustc/9b00956e56009bab2aa15d7bff10916599e3d6d6\library\std\src\rt.rs:165
+  11: main
+  12: invoke_main
+             at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:78
+      __scrt_common_main_seh
+             at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288
+  13: BaseThreadInitThunk
+  14: RtlUserThreadStart
+
+[2024-06-10 17:05:22.287625 +09:00] INFO [src\logics\uriage.rs:26] up_uriage:end
+[2024-06-10 17:05:22.287720 +09:00] INFO [src\main.rs:44] バッチ処理終了
