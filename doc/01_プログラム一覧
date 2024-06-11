@@ -118,6 +118,7 @@
  pg0120_read_config:設定ファイルの読み込み
  pd0121_static_page:静的ページの表示
  pg0122_sql_select:DBのSelect文
+ pg0123_dynamic:動的ページの表示
  pg0124_message_box:メッセージボックス
  pg0125_concat2:文字列の結合（配列）
  pg0126_vec_cat:vectorの結合

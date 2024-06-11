@@ -1,0 +1,11 @@
+[package]
+name = "pg0123_dynamic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+tera = "1.20.0"
+tokio = { version = "1.37.0", features = ["full"] }
+tokio-macros = "2.2.0"
+warp = "0.3.7"
