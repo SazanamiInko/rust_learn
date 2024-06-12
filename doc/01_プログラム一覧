@@ -125,6 +125,7 @@
  pg0127_str_push:文字列のアペンド
  pg0128_log:ログ
  pg0129_mac_adr:MACアドレス取得
+ pg0130_closure_X:クロージャーの所有権エラー
 
  
 02_TRシリーズ->応用篇
