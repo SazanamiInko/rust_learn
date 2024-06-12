@@ -126,7 +126,7 @@
  pg0128_log:ログ
  pg0129_mac_adr:MACアドレス取得
  pg0130_closure_X:クロージャーの所有権エラー
-
+ pg0131_closure_move:所有権移譲
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
