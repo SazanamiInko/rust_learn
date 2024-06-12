@@ -1,0 +1,8 @@
+[package]
+name = "pg0129_mac_adr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+get_if_addrs = "0.5.3"
+
