@@ -1,0 +1,9 @@
+[package]
+name = "pg0139_struct_in_struct"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+confy = "0.6.1"
+serde = "1.0.203"
+serde_derive = "1.0.203"
