@@ -1,3 +1,5 @@
+--Dockerのビルド
+docker build -t uriagedb-image .
 --ネットワーク
 docker network create --subnet=192.168.128.0/24 uriagenet
 --コンテナ作成

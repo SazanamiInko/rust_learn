@@ -22,20 +22,53 @@ INSERT INTO m_shop (name,iscity,deleteflg) VALUES ('御成橋めじろ店',true,
 -- 商品マスタ
 CREATE TABLE IF NOT EXISTS m_goods (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    code VARCHAR(4) NOT NULL,
     name VARCHAR(255) NOT NULL,
+    prise INT NOT NULL, 
     ishigh boolean NOT NULL,
     deleteflg boolean NOT NULL
 );
 -- 商品マスタデータ
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('孫が食ってる給食弁当',false,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('幕の内弁当',false,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('しし丸カレー',false,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('唐揚げ弁当',false,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('ステーキ弁当',true,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('なまず弁当',false,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('河太郎重',true,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('キノコご飯',false,false);
-INSERT INTO m_goods (name,ishigh,deleteflg) VALUES ('ウラワライス',false,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0001','孫が食ってる給食弁当',500,false,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0002','幕の内弁当',400,false,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0003','しし丸カレー',300,false,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0004','唐揚げ弁当',400,false,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0005','ステーキ弁当',1000,true,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0006','なまず弁当',800,false,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0007','河太郎重',2000,true,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0008','キノコご飯',100,false,false);
+INSERT INTO m_goods (code,name,prise,ishigh,deleteflg) VALUES ('0009','ウラワライス',500,false,false);
+
+
+-- 割引マスタ
+CREATE TABLE IF NOT EXISTS m_discount (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    code  VARCHAR(3) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    is_time boolean NOT NULL,
+    from_hour INT,
+    rate float NOT NULL,
+    deleteflg boolean NOT NULL
+);
+
+INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('020','タイム割1',18,true,0.20,false);
+INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('050','タイム割2',19,true,0.50,false);
+
+-- マスターFericaカード
+CREATE TABLE IF NOT EXISTS m_master_card (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    mID  VARCHAR(16) NOT NULL,
+    deleteflg boolean NOT NULL
+);
+
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('2038270024106905',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('8640899906563105',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('0522871045567072',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('0361536805164383',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('1889364835489365',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('2233997016630948',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('7269928561756239',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('5029769354380365 ',false);
 
 
 -- 発注
@@ -55,9 +88,12 @@ CREATE TABLE IF NOT EXISTS t_sale (
     year INT NOT NULL,
     month INT NOT NULL,
     day  INT NOT NULL,
+    hour  INT NOT NULL,
+    minute  INT NOT NULL,
     shop INT NOT NULL,
     goods INT NOT NULL,
-    rate INT NOT NULL
+    discount VARCHAR(3) NOT NULL,
+    rate float NOT NULL
 );
 
 -- 集計
@@ -71,4 +107,15 @@ CREATE TABLE IF NOT EXISTS t_summary (
     num INT NOT NULL,
     avg_rate INT NOT NULL,
     disposal INT NOT NULL
+);
+
+-- ロッカー開閉記録
+CREATE TABLE IF NOT EXISTS t_open_log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    shop int NOT NULL,
+    open_time  VARCHAR(9),
+    open_barcode  VARCHAR(16),
+    close_time  VARCHAR(9),
+    close_barcode  VARCHAR(16),
+    mID  VARCHAR(16) NOT NULL
 );
