@@ -137,6 +137,7 @@
  pg0140_list_filter:データフィルタ
  pg0141_regx_remove:正規表現を使った除去
  pg0142_trait:トレイト
+ pg0143_isnone:none判定
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
