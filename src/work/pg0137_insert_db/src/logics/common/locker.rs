@@ -8,6 +8,9 @@
 const START:usize=8;
 const END:usize=13;
 
+use chrono::prelude::{DateTime, Utc, Datelike };
+use csv::Error;
+use std::fs;
 use std::fs::File;
 
 ///開閉記録
@@ -64,7 +67,7 @@ fn create(locker_no:String,
     }
 
 ///開閉記録の読み込み
-pub fn load(path:&str)->Vec<OpenCloseLog> 
+pub fn load(path:&str)->Result<Vec<OpenCloseLog>,Error>
 {
     let mut ret:Vec<OpenCloseLog>=Vec::new();
 
@@ -89,5 +92,18 @@ pub fn load(path:&str)->Vec<OpenCloseLog>
      ret.push(log_line);
     }
 
-    return ret;
+    return Ok(ret);
+}
+
+///開閉ログの作成日取得
+pub fn get_created_date(path:&str)->(u32,u32,u32)
+{
+    let meta= fs::metadata(path).unwrap();
+
+    let created= meta.created().unwrap();
+    let datetime_created_utc : DateTime<Utc>=created.into();
+
+    return (datetime_created_utc.year() as u32
+            ,datetime_created_utc.month()
+            ,datetime_created_utc.day());
 }

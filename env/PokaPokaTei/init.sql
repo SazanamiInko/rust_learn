@@ -47,12 +47,13 @@ CREATE TABLE IF NOT EXISTS m_discount (
     name VARCHAR(255) NOT NULL,
     is_time boolean NOT NULL,
     from_hour INT,
+    to_hour INT,
     rate float NOT NULL,
     deleteflg boolean NOT NULL
 );
 
-INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('020','タイム割1',18,true,0.20,false);
-INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('050','タイム割2',19,true,0.50,false);
+INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('020','タイム割1',18,19,true,0.20,false);
+INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('050','タイム割2',19,20,true,0.50,false);
 
 -- マスターFericaカード
 CREATE TABLE IF NOT EXISTS m_master_card (
@@ -91,7 +92,8 @@ CREATE TABLE IF NOT EXISTS t_sale (
     hour  INT NOT NULL,
     minute  INT NOT NULL,
     shop INT NOT NULL,
-    goods INT NOT NULL,
+    goods VARCHAR(4) NOT NULL,
+    barcode VARCHAR(16),
     discount VARCHAR(3) NOT NULL,
     rate float NOT NULL
 );

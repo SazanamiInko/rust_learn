@@ -11,7 +11,7 @@ use serde_derive::{Deserialize, Serialize};
 pub struct Setting{
 
     ///店舗番号
-    pub shop:i32,
+    pub shop:u32,
     ///サーバー情報,
     pub server:ServerInfo,
     ///ロッカー情報
@@ -43,7 +43,7 @@ pub struct LockerInfo{
 }
 
 ///コンストラクタ
-pub fn create( shop:i32,
+pub fn create( shop:u32,
     user:String,
     password:String,
     host:String,
