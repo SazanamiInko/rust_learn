@@ -5,6 +5,7 @@
 /// //////////////////////////
 use mysql::*;
 use crate::logics::common::setting;
+use log::info;
 
 ///接続情報
 pub struct Connection
@@ -23,6 +24,7 @@ impl Connection
     pub fn get_connection(&self)->PooledConn
     {
 
+        info!("get_connection start");
         let url= format!("mysql://{}:{}@{}:{}/{}",
                         self.user,
                         self.password,
@@ -33,7 +35,7 @@ impl Connection
         let pool = Pool::new(url.as_str()).expect("データベースへの接続に失敗しました");
 
         let conn = pool.get_conn().expect("接続の取得に失敗しました");
-                    
+        info!("get_connection end"); 
         return conn;
     }
 }

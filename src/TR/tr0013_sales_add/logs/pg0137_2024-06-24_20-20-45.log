@@ -1,0 +1,215 @@
+[2024-06-24 20:20:45.694933 +09:00] INFO [src\main.rs:26] 売り上げ登録バッチ処理を開始しました
+[2024-06-24 20:20:45.696544 +09:00] INFO [src\logics\common\setting.rs:75] load start
+[2024-06-24 20:20:45.703155 +09:00] INFO [src\logics\common\setting.rs:78] load end
+[2024-06-24 20:20:45.703245 +09:00] INFO [src\logics\sales_api.rs:18] add_uriage start
+[2024-06-24 20:20:45.703268 +09:00] INFO [src\logics\common\locker.rs:104] get_created_date start
+[2024-06-24 20:20:45.703381 +09:00] INFO [src\logics\common\locker.rs:110] get_created_date end
+[2024-06-24 20:20:45.703418 +09:00] INFO [src\logics\common\locker.rs:74] load start
+[2024-06-24 20:20:45.705882 +09:00] INFO [src\logics\common\locker.rs:97] load end
+[2024-06-24 20:20:45.706012 +09:00] INFO [src\logics\common\connection.rs:27] get_connection start
+[2024-06-24 20:20:45.789186 +09:00] INFO [src\logics\common\connection.rs:38] get_connection end
+[2024-06-24 20:20:45.792415 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.792549 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.792581 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.792612 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.792639 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.796150 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.796237 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.796253 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.796266 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.796281 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.796293 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.797883 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.797989 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.798005 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.798017 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.798033 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.798045 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.799640 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.799725 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.799740 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.799765 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.799781 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.799793 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.801333 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.801452 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.801484 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.801533 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.801564 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.801591 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.803269 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.803385 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.803416 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.803443 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.803474 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.803502 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.805140 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.805277 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.805297 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.805311 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.805326 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.805339 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.806973 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.807077 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.807093 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.807106 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.807121 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.807133 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.808902 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.809068 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.809104 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.809119 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.809136 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.809150 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.811239 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.811343 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.811362 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.811376 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.811391 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.811404 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.813092 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.813197 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.813213 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.813226 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.813242 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.813255 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.814722 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.814812 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.814828 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.814841 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.814856 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.814868 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.816407 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.816501 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.816520 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.816533 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.816550 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.816563 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.818065 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.818182 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.818222 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.818250 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.818361 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.818398 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.820258 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.820379 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.820409 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.820437 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.820466 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.820493 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.822252 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.822359 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.822391 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.822420 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.822450 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.822478 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.824241 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.824329 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.824345 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.824358 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.824372 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.824385 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.826117 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.826239 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.826255 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.826269 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.826285 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.826298 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.828673 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.828827 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.828851 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.828880 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.828903 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.828929 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.831261 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.831382 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.831399 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.831413 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.831429 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.831442 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.833067 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.833153 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.833168 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.833181 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.833195 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.833208 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.834780 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.834879 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.834900 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.834913 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.834928 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.834940 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.836368 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.836451 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.836465 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.836479 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.836493 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.836506 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.837966 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.838056 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.838072 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.838085 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.838100 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.838124 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.839571 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.839673 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.839688 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.839702 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.839717 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.839729 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.841451 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.841591 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.841631 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.841664 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.841701 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.841729 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.843464 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.843589 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.843606 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.843620 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.843635 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.843647 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.845200 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.845309 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.845325 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.845338 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.845353 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.845365 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.846991 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.847143 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.847178 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.847207 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.847239 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.847359 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.849056 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.849144 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.849160 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.849173 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.849188 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.849200 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.850712 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.850811 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.850827 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.850840 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.850856 +09:00] INFO [src\logics\common\discount.rs:32] get_timesale no end
+[2024-06-24 20:20:45.850868 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.852458 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.852543 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.852557 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.852570 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.852588 +09:00] INFO [src\logics\common\discount.rs:28] get_timesale has end
+[2024-06-24 20:20:45.852601 +09:00] INFO [src\logics\common\discount.rs:12] set_discount start
+[2024-06-24 20:20:45.852615 +09:00] INFO [src\logics\common\discount.rs:15] set_discount end
+[2024-06-24 20:20:45.852627 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.854150 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.854251 +09:00] INFO [src\logics\common\locker.rs:42] get_goods_code start
+[2024-06-24 20:20:45.854282 +09:00] INFO [src\logics\common\locker.rs:44] get_goods_code end
+[2024-06-24 20:20:45.854310 +09:00] INFO [src\logics\common\discount.rs:21] get_timesale start
+[2024-06-24 20:20:45.854344 +09:00] INFO [src\logics\common\discount.rs:28] get_timesale has end
+[2024-06-24 20:20:45.854372 +09:00] INFO [src\logics\common\discount.rs:12] set_discount start
+[2024-06-24 20:20:45.854398 +09:00] INFO [src\logics\common\discount.rs:15] set_discount end
+[2024-06-24 20:20:45.854423 +09:00] INFO [src\logics\dao\sale.rs:44] insert start
+[2024-06-24 20:20:45.856258 +09:00] INFO [src\logics\dao\sale.rs:68] insert end
+[2024-06-24 20:20:45.863556 +09:00] INFO [src\logics\sales_api.rs:55] add_uriage end
+[2024-06-24 20:20:45.868249 +09:00] INFO [src\main.rs:38] 33件の売り上げを登録しました
+[2024-06-24 20:20:45.868373 +09:00] INFO [src\main.rs:39] 売り上げ登録バッチ処理を正常終了しました

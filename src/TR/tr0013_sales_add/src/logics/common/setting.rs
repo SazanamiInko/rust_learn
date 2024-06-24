@@ -4,6 +4,7 @@
 /// 
 /// ///////////////////////////////
 use confy;
+use log::info; 
 use serde_derive::{Deserialize, Serialize};
 
 ///設定ファイル
@@ -71,8 +72,10 @@ pub fn create( shop:u32,
 ///設定ファイルの読み込み
 pub fn load()->Setting
 {
+   info!("load start");
    let  config= confy::load::<Setting>("pokapoka", "setting")
                                                .expect("設定ファイルの読み込みに失敗しました");
+    info!("load end");
    return config;
 }
 

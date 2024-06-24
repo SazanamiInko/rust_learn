@@ -4,6 +4,7 @@
 /// 
 /// /////////////////////////////////////////
 use std::error::Error;
+use log::info;
 use mysql::*;
 use mysql::prelude::*;
 use crate::logics::common::locker;
@@ -11,27 +12,27 @@ use crate::logics::common::locker;
 ///売り上げ
 pub struct Sale{
     ///管理番号
-    id :i32,
+    pub id :i32,
     ///年
-    year:u32,
+    pub year:u32,
     ///月
-    month:u32,
+    pub month:u32,
     ///日
-    day:u32,
+    pub day:u32,
     ///時
-    hour:u32,
+    pub hour:u32,
     ///分
-    minute:u32,
+    pub minute:u32,
     ///店舗
-    shop :u32,
+    pub shop :u32,
     ///商品コード
-    goods:String,
+    pub goods:String,
     ///バーコード
-    barcode:String,
+    pub barcode:String,
     ///割引コード
-    discount:String,
+    pub discount:String,
     ///割引率
-    rate:f32
+    pub rate:f32
 } 
 
 ///実装
@@ -40,6 +41,7 @@ impl Sale{
     ///売り上げ登録
     pub fn insert(&self,tran:& mut Transaction)->Result<u32,Box<dyn Error>>
     {
+        info!("insert start");
         let query=String::from(r"
         INSERT INTO t_sale 
         (year,month,day,hour,minute,shop,goods,barcode,discount,rate)
@@ -63,6 +65,7 @@ impl Sale{
             })?;
            
         let affwct_rows:u32=1;
+        info!("insert end");
         Ok(affwct_rows)
 
     }

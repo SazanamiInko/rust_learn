@@ -6,10 +6,11 @@
 
 ///定数
 const START:usize=8;
-const END:usize=13;
+const END:usize=12;
 
 use chrono::prelude::{DateTime, Utc, Datelike };
 use csv::Error;
+use log::info; 
 use std::fs;
 use std::fs::File;
 
@@ -30,7 +31,6 @@ pub struct OpenCloseLog
     pub ferica_no:String,
     ///メンテフラグ
     pub is_mantain:String
-
 }
 
 ///実装
@@ -39,7 +39,9 @@ impl OpenCloseLog{
     ///商品コードの取得
     pub fn get_goods_code(&self)->String
     {
+        info!("get_goods_code start");
         let goods_code=self.open_barcode[START..END].to_string();
+        info!("get_goods_code end");
         return goods_code; 
     }
 }
@@ -69,6 +71,7 @@ fn create(locker_no:String,
 ///開閉記録の読み込み
 pub fn load(path:&str)->Result<Vec<OpenCloseLog>,Error>
 {
+    info!("load start");
     let mut ret:Vec<OpenCloseLog>=Vec::new();
 
     //開閉記録の読み込み
@@ -91,18 +94,21 @@ pub fn load(path:&str)->Result<Vec<OpenCloseLog>,Error>
                     );
      ret.push(log_line);
     }
-
+    info!("load end");
     return Ok(ret);
 }
 
 ///開閉ログの作成日取得
 pub fn get_created_date(path:&str)->(u32,u32,u32)
 {
+    info!("get_created_date start");
     let meta= fs::metadata(path).unwrap();
 
     let created= meta.created().unwrap();
     let datetime_created_utc : DateTime<Utc>=created.into();
 
+    info!("get_created_date end");
+    
     return (datetime_created_utc.year() as u32
             ,datetime_created_utc.month()
             ,datetime_created_utc.day());

@@ -52,8 +52,8 @@ CREATE TABLE IF NOT EXISTS m_discount (
     deleteflg boolean NOT NULL
 );
 
-INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('020','タイム割1',18,19,true,0.20,false);
-INSERT INTO m_discount (code,name,is_time,from_hour,rate,deleteflg) VALUES ('050','タイム割2',19,20,true,0.50,false);
+INSERT INTO m_discount (code,name,is_time,from_hour,to_hour,rate,deleteflg) VALUES ('020','タイム割1',true,18,19,0.20,false);
+INSERT INTO m_discount (code,name,is_time,from_hour,to_hour,rate,deleteflg) VALUES ('050','タイム割2',true,19,20,0.50,false);
 
 -- マスターFericaカード
 CREATE TABLE IF NOT EXISTS m_master_card (
