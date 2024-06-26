@@ -59,17 +59,20 @@ INSERT INTO m_discount (code,name,is_time,from_hour,to_hour,rate,deleteflg) VALU
 CREATE TABLE IF NOT EXISTS m_master_card (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mID  VARCHAR(16) NOT NULL,
+    add_mID VARCHAR(16) NOT NULL,
+    confurm_mID VARCHAR(16) NOT NULL,
+    confirm_auth boolean NOT NULL,
     deleteflg boolean NOT NULL
 );
 
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('2038270024106905',false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('8640899906563105',false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('0522871045567072',false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('0361536805164383',false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('1889364835489365',false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('2233997016630948',false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('7269928561756239',false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('5029769354380365 ',false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('2038270024106905','8640899906563105','0522871045567072',true,false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('8640899906563105','2038270024106905','0522871045567072',true,false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('0522871045567072','2038270024106905','8640899906563105',true,false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('0361536805164383','2038270024106905','8640899906563105',false,,false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('1889364835489365','2038270024106905','8640899906563105',false,false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('2233997016630948','2038270024106905','8640899906563105',false,false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('7269928561756239','2038270024106905','8640899906563105',false,false);
+INSERT INTO m_master_card(mID,deleteflg) VALUES ('5029769354380365 ','2038270024106905','',false,false);
 
 
 -- 発注
