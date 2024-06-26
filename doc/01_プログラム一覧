@@ -141,6 +141,7 @@
  pg0144_question_ope:?演算(例外処理)
  pg0145_custom_exception:独自の例外
  pg0146_check_num:数字のみの文字列であるかの検査
+ pg0147_fn_array_arg:配列を引数とする関数
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
