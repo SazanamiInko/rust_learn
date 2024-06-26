@@ -1,5 +1,5 @@
 [package]
-name = "pg0148_arg_vec"
+name = "pg0148_fn_vec_arg"
 version = "0.1.0"
 edition = "2021"
 
