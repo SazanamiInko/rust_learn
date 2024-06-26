@@ -144,6 +144,7 @@
  pg0147_fn_array_arg:配列を引数とする関数
  pg0148_fn_vec_arg:動的配列を引数とする関数
  pg0149_all:All検査
+ pg0150_any:Any検査
 
  
 02_TRシリーズ->応用篇
