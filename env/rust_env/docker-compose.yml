@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  devenv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./workspace:/workspace
+    tty: true

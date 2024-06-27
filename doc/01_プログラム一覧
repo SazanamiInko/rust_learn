@@ -145,7 +145,7 @@
  pg0148_fn_vec_arg:動的配列を引数とする関数
  pg0149_all:All検査
  pg0150_any:Any検査
-
+ pg0151_judge_os:OS判定
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
@@ -160,3 +160,12 @@
  tr0010_sallery:給与計算
  tr0012_kabara33:数秘術33の列挙
  tr0013_sales_add:売り上げデータの登録（ポカポカ亭）
+
+ 03_環境 envフォルダ
+
+ pokapokatei:ポカポカ亭売り上げ管理システム（基本情報Last Cobol問題ベース）の環境
+ 　　　　　　　OS:ubuntu
+              DB:mysql
+
+ rust_env:Rustのコンパイラが入っている環境
+　　　　　　OS:ubuntu
