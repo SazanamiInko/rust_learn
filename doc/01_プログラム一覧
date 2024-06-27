@@ -146,6 +146,8 @@
  pg0149_all:All検査
  pg0150_any:Any検査
  pg0151_judge_os:OS判定
+ pg0152_memo_open:メモ帳で開く
+ pg0153_memo_open_async:メモ帳で開く(非同期)
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
