@@ -1,0 +1,7 @@
+[package]
+name = "pg0155_web_browser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+webbrowser = "1.0.1"
