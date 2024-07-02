@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 unicode-normalization = "0.1.23"
+webbrowser = "1.0.1"
