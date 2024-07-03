@@ -151,6 +151,7 @@
  pg0154_factory:Factoryパターン
  pg0155_web_browser:外部Webページの表示
  pg0156_impl_const:実装型コンストラクタ
+ pg0157_struct_to_struct_x:構造体から構造体（ビルドできません）
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
