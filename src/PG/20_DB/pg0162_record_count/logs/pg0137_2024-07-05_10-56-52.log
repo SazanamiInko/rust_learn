@@ -1,0 +1,4 @@
+[2024-07-05 10:56:52.759156 +09:00] INFO [src\logics\common\setting.rs:49] load start
+[2024-07-05 10:56:52.767450 +09:00] INFO [src\logics\common\setting.rs:52] load end
+[2024-07-05 10:56:52.767548 +09:00] INFO [src\logics\dao\common\connection.rs:27] get_connection start
+[2024-07-05 10:56:52.845314 +09:00] INFO [src\logics\dao\common\connection.rs:38] get_connection end

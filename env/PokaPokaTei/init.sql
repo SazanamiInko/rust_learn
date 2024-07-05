@@ -65,14 +65,14 @@ CREATE TABLE IF NOT EXISTS m_master_card (
     deleteflg boolean NOT NULL
 );
 
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('2038270024106905','8640899906563105','0522871045567072',true,false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('8640899906563105','2038270024106905','0522871045567072',true,false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('0522871045567072','2038270024106905','8640899906563105',true,false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('0361536805164383','2038270024106905','8640899906563105',false,,false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('1889364835489365','2038270024106905','8640899906563105',false,false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('2233997016630948','2038270024106905','8640899906563105',false,false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('7269928561756239','2038270024106905','8640899906563105',false,false);
-INSERT INTO m_master_card(mID,deleteflg) VALUES ('5029769354380365 ','2038270024106905','',false,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('2038270024106905','8640899906563105','0522871045567072',true,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('8640899906563105','2038270024106905','0522871045567072',true,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('0522871045567072','2038270024106905','8640899906563105',true,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('0361536805164383','2038270024106905','8640899906563105',false,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('1889364835489365','2038270024106905','8640899906563105',false,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('2233997016630948','2038270024106905','8640899906563105',false,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('7269928561756239','2038270024106905','8640899906563105',false,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('5029769354380365 ','2038270024106905','',false,false);
 
 
 -- 発注
