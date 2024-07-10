@@ -3,7 +3,7 @@
 /// 文字列長検査
 /// 
 /// ///////////////////////////////
-use crate::logics::traits::verify::Verify;
+use crate::logics::{traits::verify::Verify,traits};
 use crate::logics::verifys::errors::length_error::LengthError;
 
 ///同値検査

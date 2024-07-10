@@ -3,7 +3,7 @@
 /// 同値検査
 /// 
 /// ///////////////////////////////
-use crate::logics::{traits::verify::Verify,traits};
+use crate::logics::traits::verify::Verify;
 use crate::logics::verifys::errors::equal_error::EqualError;
 
 ///同値検査

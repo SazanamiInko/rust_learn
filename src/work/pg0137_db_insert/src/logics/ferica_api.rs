@@ -5,9 +5,9 @@
 /// /////////////////////////////
 use crate::logics::verifys::equal_verify::EqualVerify;
 use crate::logics::verifys::length_verify::LengthVerify;
+use crate::logics::verifys::not_number_verify::NotNumberVerify;
 use std::error::Error;
-
-use super::{traits::verify::Verify, verifys::equal_verify};
+use super::traits::verify::Verify;
 
 ///管理Fericaの登録
 pub fn add_ferica(new_ferica:&str,add_ferica:&str)->Result<u32,Box<dyn Error>>
@@ -47,7 +47,17 @@ pub fn check(add_card:&str,adder_card:&str)->Result<(),Box<dyn Error>>
                       LEN)
                     .verify()
                     ?;                 
-            
+    //数字チェック        
+    
+    NotNumberVerify::set("登録するカード",
+    add_card) 
+    .verify()
+    ?;   
+    
+    NotNumberVerify::set("登録者のカード",
+    adder_card) .verify()
+    ?;   
 
-    return Ok(());
+
+   return Ok(());
 }

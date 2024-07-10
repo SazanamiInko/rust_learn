@@ -4,9 +4,9 @@
 /// 
 /// //////////////////////////////////////
 use mysql::{prelude::Queryable, Transaction};
-
+use std::error::Error;
 ///管理Fericaカード
-pub struct master_card
+pub struct MasterCard
 {
     ///管理番号
     pub id : i32,
@@ -23,7 +23,8 @@ pub struct master_card
 }
 
 ///実装
-impl master_card
+impl MasterCard
+
 {
     ///コンストラクタ
     pub fn new(id:i32,
@@ -33,7 +34,8 @@ impl master_card
                confirm_auth:bool,
                deleteflg:bool)->Self
     {
-        return master_card{
+        return  MasterCard
+        {
                 id : id,
                 m_id :m_id.to_string(),
                 add_m_id : add_m_id.to_string(),
@@ -48,19 +50,42 @@ impl master_card
     pub  fn from(m_id :&str,tran:&mut Transaction)->Option<Self>
     {
         
-     let query="SELECT id, name FROM m_goods";
+     let query=r"SELECT id as id, 
+                              mID as m_id,
+                              add_mID as add_m_id,
+                              confurm_mID as confurm_m_id,
+                              confirm_auth as confirm_auth, 
+                              deleteflg as deleteflg 
+                             FROM m_master_card
+                             WHERE deleteflg=0 ";
 
-    return conn.query_map(query,|(id,name)|
-                            {
-                                goods::create(id,name)
-                            }
-                        ).expect("クエリの実行に失敗しました");
-                        
+    let ret =tran.query_map(query,|(
+         id,
+         m_id,
+         add_m_id,
+         confurm_m_id,
+         confirm_auth, 
+         deleteflg)|
+                            
+                                 MasterCard{
+                                    id :id,
+                                    m_id: m_id,
+                                    add_m_id:add_m_id,
+                                    confurm_m_id:confurm_m_id,
+                                    confirm_auth:confirm_auth,
+                                    deleteflg:deleteflg}
+                                                        
+                        ).unwrap();
+        if ret.len()==0
+        {
+            return None;
+        }
 
+        return Some(ret[0]);
     }
 
     ///Ferica登録
-    pub fn insert(&self)->Recult<u32,Box<dyn Error>>
-    {}
+    //pub fn insert(&self)->Result<u32,Box<dyn Error>>
+    //{}
 }
 
