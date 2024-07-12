@@ -38,7 +38,7 @@ fn main() {
         {
             println!("{}",e);
             println!("エラーがありましたので終了します。");
-            return;;
+            return;
         }  
    }
 

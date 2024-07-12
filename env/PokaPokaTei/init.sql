@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS m_master_card (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mID  VARCHAR(16) NOT NULL,
     add_mID VARCHAR(16) NOT NULL,
-    confurm_mID VARCHAR(16) NOT NULL,
+    confurm_mID VARCHAR(16),
     confirm_auth boolean NOT NULL,
     deleteflg boolean NOT NULL
 );
@@ -72,7 +72,7 @@ INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES
 INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('1889364835489365','2038270024106905','8640899906563105',false,false);
 INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('2233997016630948','2038270024106905','8640899906563105',false,false);
 INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('7269928561756239','2038270024106905','8640899906563105',false,false);
-INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('5029769354380365 ','2038270024106905','',false,false);
+INSERT INTO m_master_card(mID,add_mID,confurm_mID,confirm_auth,deleteflg) VALUES ('5029769354380365 ','2038270024106905',NULL,false,false);
 
 
 -- 発注

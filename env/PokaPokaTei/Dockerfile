@@ -17,6 +17,8 @@ RUN sed -i 's/bind-address.*/bind-address = 0.0.0.0/' /etc/mysql/mysql.conf.d/my
 COPY init.sql /init.sql
 COPY my.cnf /etc/mysql/conf.d/
 
+RUN chown -R mysql:mysql /path/to/datadir
+
 # MySQLのデータディレクトリを初期化し、初期化スクリプトを実行
 RUN service mysql start && \
     mysql -u root -p${MYSQL_ROOT_PASSWORD} < /init.sql && \

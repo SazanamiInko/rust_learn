@@ -3,8 +3,10 @@
 /// 管理FericaカードDAO
 /// 
 /// //////////////////////////////////////
-use mysql::{prelude::Queryable, Transaction};
+use mysql::*;
+use prelude::Queryable;
 use std::error::Error;
+
 ///管理Fericaカード
 pub struct MasterCard
 {
@@ -46,8 +48,8 @@ impl MasterCard
 
     }
 
-    //DBからDAO取得
-    pub  fn from(m_id :&str,tran:&mut Transaction)->Option<Self>
+    ///DBからDAO取得
+    pub  fn from(ferica_id :&str,tran:&mut Transaction)->Option<Self>
     {
         
      let query=r"SELECT id as id, 
@@ -57,9 +59,12 @@ impl MasterCard
                               confirm_auth as confirm_auth, 
                               deleteflg as deleteflg 
                              FROM m_master_card
-                             WHERE deleteflg=0 ";
+                             WHERE deleteflg=0 
+                             AND mID=:mID";
 
-    let ret =tran.query_map(query,|(
+    let mut ret =tran.exec_map(query,
+        params!("mID"=>ferica_id),
+        |(
          id,
          m_id,
          add_m_id,
@@ -80,12 +85,23 @@ impl MasterCard
         {
             return None;
         }
-
-        return Some(ret[0]);
+        let card=ret.remove(0);
+        return Some(card);
     }
 
-    ///Ferica登録
-    //pub fn insert(&self)->Result<u32,Box<dyn Error>>
-    //{}
+    ///データ登録
+    pub fn insert(&self,tran:&mut Transaction)->Result<u32,Box<dyn Error>>
+    {
+        let query=r"INSERT INTO (mID,add_mID,confurm_mID,confirm_auth,deleteflg) 
+                    VALUES (:mID,:add_mID,null,false,false)";
+        
+        tran.exec_drop(query,
+            params!{
+                "mID"=>self.m_id.clone(),
+                "add_mID"=>self.add_m_id.clone()
+            });
+        
+        return Ok(1);
+    }
 }
 
