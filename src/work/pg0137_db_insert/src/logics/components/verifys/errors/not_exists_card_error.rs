@@ -3,7 +3,7 @@
 /// カード存在エラー
 /// 
 /// //////////////////////////////////////////
-use crate::logics::verifys::not_exists_card_verify::NotExistsCardVerify;
+use crate::logics::components::verifys::logical_verifys::not_exists_card_verify::NotExistsCardVerify;
 use std::error::Error;
 use std::fmt;
 

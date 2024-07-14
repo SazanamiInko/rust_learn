@@ -3,9 +3,9 @@
 ///カード存在チェック
 /// 
 /// ///////////////////////////////
-use crate::logics::traits::logical_verify::LogicalVerify;
-use crate::logics::verifys::errors::not_exists_card_error::NotExistsCardError;
-use crate::logics::common::master_card as card_util;
+use crate::logics::components::verifys::logical_verifys::LogicalVerify;
+use crate::logics::components::verifys::errors::not_exists_card_error::NotExistsCardError;
+use crate::logics::components::common::master_card as card_util;
 use mysql::*;
 
 ///数値検査

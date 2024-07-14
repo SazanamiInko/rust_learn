@@ -3,8 +3,8 @@
 /// 文字列長検査
 /// 
 /// ///////////////////////////////
-use crate::logics::traits::verify::Verify;
-use crate::logics::verifys::errors::length_error::LengthError;
+use crate::logics::components::verifys::errors::length_error::LengthError;
+use crate::logics::components::verifys::param_verifys::ParamVerify;
 
 ///同値検査
 pub struct LengthVerify{
@@ -34,10 +34,10 @@ impl LengthVerify{
 }
 
 ///検査
-impl Verify for LengthVerify
+impl ParamVerify for LengthVerify
 {
     ///検査する
-    fn verify(&self)->Result<(),Box<dyn std::error::Error>> {
+     fn verify(&self)->Result<(),Box<dyn std::error::Error>> {
         
         if self.target.len() as u32!=self.length{
             return Err(Box::new(LengthError::from(self)));

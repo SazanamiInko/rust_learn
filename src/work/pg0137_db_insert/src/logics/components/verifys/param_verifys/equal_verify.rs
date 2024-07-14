@@ -3,8 +3,8 @@
 /// 同値検査
 /// 
 /// ///////////////////////////////
-use crate::logics::traits::verify::Verify;
-use crate::logics::verifys::errors::equal_error::EqualError;
+use crate::logics::components::verifys::errors::equal_error::EqualError;
+use crate::logics::components::verifys::param_verifys::ParamVerify;
 
 ///同値検査
 pub struct EqualVerify{
@@ -41,7 +41,7 @@ impl EqualVerify{
 }
 
 ///検査
-impl Verify for EqualVerify
+impl ParamVerify for EqualVerify
 {
     ///検査する
     fn verify(&self)->Result<(),Box<dyn std::error::Error>> {

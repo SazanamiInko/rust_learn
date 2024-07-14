@@ -3,8 +3,8 @@
 ///数値検査
 /// 
 /// ///////////////////////////////
-use crate::logics::traits::verify::Verify;
-use crate::logics::verifys::errors::not_number_error::NotNumberError;
+use crate::logics::components::verifys::errors::not_number_error::NotNumberError;
+use crate::logics::components::verifys::param_verifys::ParamVerify;
 ///数値検査
 pub struct NotNumberVerify{
     ///試験項目名
@@ -29,7 +29,7 @@ impl NotNumberVerify{
 }
 
 ///検査
-impl Verify for NotNumberVerify
+impl ParamVerify for NotNumberVerify
 {
     ///検査する
     fn verify(&self)->Result<(),Box<dyn std::error::Error>> {

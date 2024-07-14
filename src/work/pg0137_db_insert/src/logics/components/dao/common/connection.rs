@@ -4,7 +4,7 @@
 ///
 /// //////////////////////////
 use mysql::*;
-use crate::logics::common::setting;
+use crate::logics::components::common::setting;
 use log::info;
 
 ///接続情報

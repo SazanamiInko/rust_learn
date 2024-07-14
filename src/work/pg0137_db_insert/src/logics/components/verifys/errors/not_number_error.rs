@@ -3,7 +3,7 @@
 /// 数値以外エラー
 /// 
 /// //////////////////////////////
-use crate::logics::verifys::not_number_verify::NotNumberVerify;
+use crate::logics::components::verifys::param_verifys::not_number_verify::NotNumberVerify;
 use std::error::Error;
 use std::fmt;
 

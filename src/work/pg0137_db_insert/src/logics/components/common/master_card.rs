@@ -3,7 +3,7 @@
 ///マスターカードユーテリティ
 ///
 /// ////////////////////////////////////////
-use crate::logics::dao::master_card as dao_card;
+use crate::logics::components::dao::master_card as dao_card;
 use mysql::*;
 
 ///登録済みチェック

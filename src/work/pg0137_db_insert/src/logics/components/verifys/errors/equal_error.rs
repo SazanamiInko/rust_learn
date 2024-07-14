@@ -3,7 +3,7 @@
 /// 同値エラー
 /// 
 /// //////////////////////////////
-use crate::logics::verifys::equal_verify::EqualVerify;
+use crate::logics::components::verifys::param_verifys::equal_verify::EqualVerify;
 use std::error::Error;
 use std::fmt;
 

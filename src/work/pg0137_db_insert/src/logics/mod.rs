@@ -1,5 +1,2 @@
-pub mod common;
-pub mod dao;
-pub mod traits;
-pub mod verifys;
+pub mod components;
 pub mod ferica_api;

@@ -48,6 +48,20 @@ impl MasterCard
 
     }
 
+    pub fn create_new(m_id :&str,add_m_id :&str)->Self
+    {
+        return  MasterCard
+        {
+                id : 0,
+                m_id :m_id.to_string(),
+                add_m_id : add_m_id.to_string(),
+                confurm_m_id: String::from(""),
+                confirm_auth:false,
+                deleteflg : false
+        };
+
+    }
+
     ///DBからDAO取得
     pub  fn from(ferica_id :&str,tran:&mut Transaction)->Option<Self>
     {

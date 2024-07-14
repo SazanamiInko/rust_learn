@@ -5,7 +5,6 @@
 /// /////////////////////////////////////////
 mod logics;
 use std::env;
-use crate::logics::ferica_api;
 
 ///メイン関数
 fn main() {
@@ -29,18 +28,16 @@ fn main() {
    }
 
    //カードのチェック
-   let add_card=args[ARG_ADD_CARD_POS].as_str();
-   let adder_card=args[ARG_ADDER_CARD_POS].as_str();
-   match ferica_api::check(add_card, adder_card)
-   {
-        Ok(())=>{},
-        Err(e)=>
-        {
-            println!("{}",e);
-            println!("エラーがありましたので終了します。");
-            return;
-        }  
-   }
-
-   println!("カード情報を登録しました");
+   let new_ferica=args[ARG_ADD_CARD_POS].as_str();
+   let adder_ferica=args[ARG_ADDER_CARD_POS].as_str();
+  match logics::ferica_api::add_ferica(new_ferica, adder_ferica)
+  {
+     Ok(())=>{println!("カード情報を登録しました");},
+     Err(e)=>
+     {
+          println!("{}",e);
+          println!("カード情報の登録に失敗しました");
+     }
+  }
+   
 }

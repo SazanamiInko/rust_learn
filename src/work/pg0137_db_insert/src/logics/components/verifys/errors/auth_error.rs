@@ -3,7 +3,7 @@
 /// 承認者カードエラー
 /// 
 /// //////////////////////////////////////////
-use crate::logics::verifys::auth_verify::AuthVerify;
+use crate::logics::components::verifys::logical_verifys::auth_verify::AuthVerify;
 use std::error::Error;
 use std::fmt;
 
@@ -34,9 +34,9 @@ impl AuthError{
     pub fn from(auth_verify:&AuthVerify)->Self
     {
         let message=format!("{}項目/承認カードチェックNG:{}は承認カードではあいません"
-                                    ,not_exists_card_verify.label
-                                    ,not_exists_card_verify.target_card);
+                                    ,auth_verify.label
+                                    ,auth_verify.target_card);
 
-        return NotExistsCardError{message:message}; 
+        return AuthError{message:message}; 
     } 
 }

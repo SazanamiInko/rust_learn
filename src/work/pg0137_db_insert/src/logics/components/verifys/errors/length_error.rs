@@ -4,7 +4,7 @@
 /// 
 /// //////////////////////////////
 
-use crate::logics::verifys::length_verify::LengthVerify;
+use crate::logics::components::verifys::param_verifys::length_verify::LengthVerify;
 use std::error::Error;
 use std::fmt;
 
