@@ -87,7 +87,7 @@ let setting=create(4,
     String::from("127.0.0.1"),
     String::from("3306"),
     String::from("uriage"),
-    String::from(r"C:\Users\Public\Documents\Data\Rust\work\pokapoka\OpenClose.log"));
+    String::from(r"C:\Users\Public\Documents\Data\Rust\work\pokapoka\master_card_maint.log"));
 
     confy::store("pokapoka","setting", setting)
         .expect("設定ファイルの保存に失敗しました");

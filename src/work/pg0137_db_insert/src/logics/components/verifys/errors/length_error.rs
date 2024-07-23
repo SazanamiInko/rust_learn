@@ -34,7 +34,7 @@ impl LengthError{
     ///コンストラクタ
     pub fn from(length_verify:&LengthVerify)->Self
     {
-        let message=format!("{}項目/文字列長チェックNG:{}文字の引数を指定してください"
+        let message=format!("文字列長チェックNG:{}は{}文字の引数を指定してください"
                                     ,length_verify.label
                                     ,length_verify.length);
 

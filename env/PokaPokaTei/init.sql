@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS m_master_card (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mID  VARCHAR(16) NOT NULL,
     add_mID VARCHAR(16) NOT NULL,
-    confurm_mID VARCHAR(16),
+    confirm_mID VARCHAR(16),
     confirm_auth boolean NOT NULL,
     deleteflg boolean NOT NULL
 );

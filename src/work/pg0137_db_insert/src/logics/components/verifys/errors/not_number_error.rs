@@ -33,7 +33,7 @@ impl NotNumberError{
     ///コンストラクタ
     pub fn from(not_number_verify:&NotNumberVerify)->Self
     {
-        let message=format!("{}項目/数値エラーチェックNG:数値のデータにしてください。"
+        let message=format!("数値エラーチェックNG:{}は数値のデータにしてください"
                                     ,not_number_verify.label);
 
         return NotNumberError{message:message}; 

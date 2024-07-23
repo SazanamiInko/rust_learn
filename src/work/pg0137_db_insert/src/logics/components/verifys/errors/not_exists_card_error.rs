@@ -33,9 +33,8 @@ impl NotExistsCardError{
     ///コンストラクタ
     pub fn from(not_exists_card_verify:&NotExistsCardVerify)->Self
     {
-        let message=format!("{}項目/カード存在チェックNG:{}は登録済みです"
-                                    ,not_exists_card_verify.label
-                                    ,not_exists_card_verify.target_card);
+        let message=format!("カード存在チェックNG:{}は登録済みです"
+                                    ,not_exists_card_verify.label);
 
         return NotExistsCardError{message:message}; 
     } 

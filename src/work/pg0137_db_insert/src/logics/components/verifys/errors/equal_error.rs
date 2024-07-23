@@ -33,8 +33,7 @@ impl EqualError{
     ///コンストラクタ
     pub fn from(equal_verify:&EqualVerify)->Self
     {
-        let message=format!("{}項目/同値チェックNG:{}～{}の間の値にしてください。"
-                                    ,equal_verify.label
+        let message=format!("同値チェックNG:{}と{}の値が同じです"
                                     ,equal_verify.label_a
                                     ,equal_verify.label_b);
 
