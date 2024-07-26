@@ -1,0 +1,8 @@
+[package]
+name = "pg0165_barcode"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+barcoders = { version = "2.0.0", features = ["image"] } 
+image = "0.25.2"
