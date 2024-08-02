@@ -160,6 +160,7 @@
  pg0164_zip_ext:ZIP展開
  pg0165_barcode:バーコード発行
  pg0166_barcode_read:バーコード読み込み
+ pg0167_qr:QRコード生成
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
