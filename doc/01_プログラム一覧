@@ -186,3 +186,6 @@
 
  rust_env:Rustのコンパイラが入っている環境
 　　　　　　OS:ubuntu
+
+pokapokatei2:ポカポカ亭売り上げ管理システム再構築（基本情報Last Cobol問題ベース）の環境
+              DB:mysql
