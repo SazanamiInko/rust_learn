@@ -1,0 +1,17 @@
+--Dockerのビルド
+docker build -t uriagedb-image .
+--ネットワーク
+docker network create --subnet=192.168.128.0/24 uriagenet
+--コンテナ作成
+docker run --name uriage-container --network uriagenet --ip 192.168.128.100 -p 3306:3306 -d uriagedb-image
+--name mysql-container：コンテナの名前を指定。
+--Dockerの実行
+docker exec -it uriage-container /bin/bash
+--MySQL
+mysql -u root -p
+
+--初期化だとエラーになるSQL
+CREATE USER 'root'@'%' IDENTIFIED BY 'p1kap1ka';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
