@@ -17,7 +17,7 @@ pub struct MasterCard
     ///登録Ferica
     pub add_m_id : String,
     ///承認Ferica
-    pub confurm_m_id: String,
+    pub confirm_m_id: String,
     ///承認権
     pub confirm_auth: bool,
     ///削除フラグ
@@ -32,7 +32,7 @@ impl MasterCard
     pub fn new(id:i32,
                m_id :&str,
                add_m_id :&str,
-               confurm_m_id:&str,
+               confirm_m_id:&str,
                confirm_auth:bool,
                deleteflg:bool)->Self
     {
@@ -41,7 +41,7 @@ impl MasterCard
                 id : id,
                 m_id :m_id.to_string(),
                 add_m_id : add_m_id.to_string(),
-                confurm_m_id: confurm_m_id.to_string(),
+                confirm_m_id: confirm_m_id.to_string(),
                 confirm_auth:confirm_auth,
                 deleteflg : deleteflg
         };
@@ -55,7 +55,7 @@ impl MasterCard
                 id : 0,
                 m_id :m_id.to_string(),
                 add_m_id : add_m_id.to_string(),
-                confurm_m_id: String::from(""),
+                confirm_m_id: String::from(""),
                 confirm_auth:false,
                 deleteflg : false
         };
@@ -69,20 +69,20 @@ impl MasterCard
      let query=r"SELECT id as id, 
                               mID as m_id,
                               add_mID as add_m_id,
-                              confurm_mID as confurm_m_id,
+                              confirm_mID as confirm_m_id,
                               confirm_auth as confirm_auth, 
                               deleteflg as deleteflg 
                              FROM m_master_card
-                             WHERE deleteflg=0 
-                             AND mID=:mID";
+                             WHERE deleteflg=0
+                            AND mID = :key";
 
     let mut ret =tran.exec_map(query,
-        params!("mID"=>ferica_id),
+        params!("key"=>ferica_id),
         |(
          id,
          m_id,
          add_m_id,
-         confurm_m_id,
+         confirm_m_id,
          confirm_auth, 
          deleteflg)|
                             
@@ -90,7 +90,7 @@ impl MasterCard
                                     id :id,
                                     m_id: m_id,
                                     add_m_id:add_m_id,
-                                    confurm_m_id:confurm_m_id,
+                                    confirm_m_id:confirm_m_id,
                                     confirm_auth:confirm_auth,
                                     deleteflg:deleteflg}
                                                         
@@ -106,7 +106,7 @@ impl MasterCard
     ///データ登録
     pub fn insert(&self,tran:&mut Transaction)->Result<u32,Box<dyn Error>>
     {
-        let query=r"INSERT INTO (mID,add_mID,confurm_mID,confirm_auth,deleteflg) 
+        let query=r"INSERT INTO (mID,add_mID,confirm_mID,confirm_auth,deleteflg) 
                     VALUES (:mID,:add_mID,null,false,false)";
         
         tran.exec_drop(query,

@@ -7,6 +7,8 @@ use confy;
 use log::info; 
 use serde_derive::{Deserialize, Serialize};
 
+use crate::logics::components::common::setting;
+
 ///設定ファイル
 #[derive(Default, Serialize, Deserialize, Debug)]
 pub struct Setting{
@@ -83,7 +85,7 @@ pub fn load()->Setting
 pub fn write(){
 let setting=create(4,
     String::from("root"),
-    String::from("p1kap1ka"),
+    String::from("p0kap0ka"),
     String::from("127.0.0.1"),
     String::from("3306"),
     String::from("uriage"),
