@@ -29,5 +29,6 @@ pub fn add_ferica(new_ferica:&str,add_ferica:&str)->Result<(),Box<dyn Error>>
   
    component.check_logical(&mut tran)?;
    _=component.execute(&mut tran);
+   tran.commit();
     return Ok(());
 }

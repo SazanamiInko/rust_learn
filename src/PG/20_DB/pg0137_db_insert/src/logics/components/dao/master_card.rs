@@ -106,14 +106,14 @@ impl MasterCard
     ///データ登録
     pub fn insert(&self,tran:&mut Transaction)->Result<u32,Box<dyn Error>>
     {
-        let query=r"INSERT INTO (mID,add_mID,confirm_mID,confirm_auth,deleteflg) 
-                    VALUES (:mID,:add_mID,null,false,false)";
-        
-        tran.exec_drop(query,
-            params!{
-                "mID"=>self.m_id.clone(),
-                "add_mID"=>self.add_m_id.clone()
-            });
+        let query=r"INSERT INTO m_master_card (mID,add_mID,confirm_mID,confirm_auth,deleteflg) 
+                    VALUES (:new_card,:auther_card,null,false,false)";
+            tran.exec_drop(query,
+            
+              params!{
+                "new_card"=>self.m_id.clone(),
+                "auther_card"=>self.add_m_id.clone()
+            })?;
         
         return Ok(1);
     }
