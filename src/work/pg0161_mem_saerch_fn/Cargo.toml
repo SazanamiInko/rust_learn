@@ -1,6 +1,0 @@
-[package]
-name = "pg0161_mem_saerch_fn"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]

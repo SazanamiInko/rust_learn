@@ -1,0 +1,45 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'pg0161_mem_saerch_fn'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=pg0161_mem_saerch_fn",
+                    "--package=pg0161_mem_saerch_fn"
+                ],
+                "filter": {
+                    "name": "pg0161_mem_saerch_fn",
+                    "kind": "bin"
+                }
+            },
+            "args": ["24"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'pg0161_mem_saerch_fn'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=pg0161_mem_saerch_fn",
+                    "--package=pg0161_mem_saerch_fn"
+                ],
+                "filter": {
+                    "name": "pg0161_mem_saerch_fn",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

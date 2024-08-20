@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-mysql = "25.0.1"
+mysql = "25.0.1"cargo 
 backtrace = "0.3.73"
 chrono = "0.4.38"
 confy = "0.6.1"

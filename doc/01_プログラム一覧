@@ -155,6 +155,7 @@
  pg0158_struct_to_struct:構造体から構造体
  pg0159_struct_update:構造体の更新
  pg0160_another_name:モジュール別名
+ pg0161_mem_saerch_fn:リソースの検索
  pg0162_record_count:テーブル件数取得
  pg0163_zip:ZIP作成
  pg0164_zip_ext:ZIP展開
