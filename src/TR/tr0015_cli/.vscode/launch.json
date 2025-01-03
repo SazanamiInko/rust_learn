@@ -1,0 +1,45 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tr0015_cli'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tr0015_cli",
+                    "--package=tr0015_cli"
+                ],
+                "filter": {
+                    "name": "tr0015_cli",
+                    "kind": "bin"
+                }
+            },
+            "args": ["1","1.2525"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tr0015_cli'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tr0015_cli",
+                    "--package=tr0015_cli"
+                ],
+                "filter": {
+                    "name": "tr0015_cli",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
