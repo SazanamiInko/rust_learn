@@ -164,6 +164,7 @@
  pg0167_qr:QRコード生成
  pg0168_qr_decode:QRコードの読み取り
  pg0137_db_insert:DB値にnull登録
+ pg0169_itor:反復子
  
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
