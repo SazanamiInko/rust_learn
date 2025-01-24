@@ -1,0 +1,11 @@
+[package]
+name = "pg0171_DB_update"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+confy = "0.6.1"
+log = "0.4.25"
+mysql = "26.0.0"
+serde = "1.0.217"
+serde_derive = "1.0.217"
