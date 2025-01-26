@@ -25,7 +25,8 @@ fn main() {
    
       //カードの削除
       let delete_ferica=args[ARG_DELETE_CARD_POS].as_str();
-      let applicant_ferica=args[ARG_DELETE_CARD_POS].as_str();
+
+      let applicant_ferica=args[ARG_APPLICANT_CARD_POS].as_str();
      match logics::ferica_api::delete_ferica(delete_ferica, applicant_ferica)
      {
         Ok(())=>{println!("カード情報を削除しました");},

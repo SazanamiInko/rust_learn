@@ -40,7 +40,7 @@ pub fn delete_ferica(delete_fericard:&str,applicant_ferica:&str)->Result<(),Box<
     //コンポーネントの生成
     let component=DeleteFericaComponent::new(delete_fericard,applicant_ferica);
 
-    component.check_param();
+    component.check_param()?;
 
      //設定ファイルの読み込み
      let setting=setting::load();
@@ -49,7 +49,6 @@ pub fn delete_ferica(delete_fericard:&str,applicant_ferica:&str)->Result<(),Box<
      let mut pool=con.get_connection();
      let mut tran=pool.start_transaction(TxOpts::default())?;
 
-     
     component.check_logical(&mut tran)?;
      _=component.execute(&mut tran);
     tran.commit();

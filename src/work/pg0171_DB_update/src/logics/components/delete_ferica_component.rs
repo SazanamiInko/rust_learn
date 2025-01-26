@@ -48,10 +48,11 @@ impl Component for DeleteFericaComponent
     {
         //同値チェック
          EqualVerify::set("削除するカードと申請者のカードチェック",
-                            self.delete_ferica.as_str(), 
-                            self.applicant_ferica.as_str(), 
-                            self.delete_ferica_label.as_str(), 
-                            self.applicant_ferica_label.as_str())
+                        self.delete_ferica_label.as_str(),
+                        self.delete_ferica.as_str(),
+                        self.applicant_ferica_label.as_str(),
+                        self.applicant_ferica.as_str()
+                        )
                         .verify()
                         ?;
 
