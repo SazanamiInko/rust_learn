@@ -33,8 +33,9 @@ impl AuthError{
     ///コンストラクタ
     pub fn from(auth_verify:&AuthVerify)->Self
     {
-        let message=format!("承認カードチェックNG:{}は登録できるカードではあいません"
-                                    ,auth_verify.target_card);
+        let message=format!("承認カードチェックNG:{}は{}できるカードではあいません"
+                                    ,auth_verify.target_card
+                                ,auth_verify.verbe);
 
         return AuthError{message:message}; 
     } 

@@ -12,6 +12,8 @@ use mysql::*;
 pub struct AuthVerify{
     ///試験項目名
     pub label:String,
+    ///動作
+    pub verbe:String,
     ///検査対象
     pub target_card:String,
    
@@ -22,10 +24,12 @@ impl AuthVerify{
 
     ///コンストラクタ
     pub fn set(label:&str,
+        verbe:&str,
         target_card:&str)->Self
     {
         return AuthVerify{
             label:label.to_string(),
+            verbe:verbe.to_string(),
             target_card:target_card.to_string()
         };
     }

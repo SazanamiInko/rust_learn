@@ -50,7 +50,7 @@ pub fn delete_ferica(delete_fericard:&str,applicant_ferica:&str)->Result<(),Box<
      let mut tran=pool.start_transaction(TxOpts::default())?;
 
     component.check_logical(&mut tran)?;
-    _=component.execute(&mut tran);
+    _=component.execute(&mut tran)?;
     _=tran.commit();
     return Ok(());
 

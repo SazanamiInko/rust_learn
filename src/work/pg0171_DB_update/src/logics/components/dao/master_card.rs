@@ -121,23 +121,31 @@ impl MasterCard
     ///データ更新
     pub fn update(&self,tran:&mut Transaction)->Result<u32,Box<dyn Error>>
     {
-        let query=r"UPDATE SET 
-        add_mID=:padd_mID
-        ,confirm_mID=:pconfirm_mID
-        ,confirm_auth=:pconfirm_auth
-        ,deleteflg=:pdeleteflg
-        WHERE mID=:pm_id";
+        let query=r"UPDATE m_master_card SET 
+        add_mID = :new_add,
+        confirm_mID = :new_confirm,
+        confirm_auth = :new_confirm_auth,
+        deleteflg = :new_deleteflg 
+        WHERE mID = :key";
 
-        _=tran.exec_drop(query,
+        let res=tran.exec_drop(query,
         params!
         {
-            "padd_mID"=>self.add_m_id.clone(),
-            "pconfirm_m_id"=>self.confirm_m_id.clone(),
-            "pconfirm_auth"=>self.confirm_auth,
-            "pdeleteflg"=>self.deleteflg,
-            "pm_id"=>self.m_id.clone()
+            "new_add"=>self.add_m_id.clone(),
+            "new_confirm"=>self.confirm_m_id.clone(),
+            "new_confirm_auth"=>self.confirm_auth,
+            "new_deleteflg"=>self.deleteflg,
+            "key"=>self.m_id.clone()
         }
         );
+
+        match  res {
+            Ok(_)=>{},
+            Err(e)=>
+            {
+                 return Err(Box::new(e));
+            }
+        }
         
         return Ok(1);
     }

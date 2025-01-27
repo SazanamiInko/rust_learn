@@ -98,7 +98,8 @@ impl Component for DeleteFericaComponent
                         .verify(tran)?;
     
         //カード承認者
-        AuthVerify::set(self.applicant_ferica_label.as_str(), 
+        AuthVerify::set(self.applicant_ferica_label.as_str(),
+                        "削除", 
                         self.applicant_ferica.as_str())
                    .verify(tran)
                    ?;
@@ -114,7 +115,7 @@ impl Component for DeleteFericaComponent
                                         .unwrap();
         //削除フラグを立てて更新
         delete_card.deleteflg=consts::DELETEDFLG_ON;
-        _=delete_card.update(tran);
+        _=delete_card.update(tran)?;
         return Ok(());
     }
 }

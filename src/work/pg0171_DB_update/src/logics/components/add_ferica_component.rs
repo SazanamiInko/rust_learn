@@ -92,7 +92,8 @@ impl Component for AddFericaComponent
                             ?;
 
         //カード承認者
-        AuthVerify::set(self.adder_ferica_label.as_str(), 
+        AuthVerify::set(self.adder_ferica_label.as_str(),
+                        "登録", 
                         self.adder_ferica.as_str())
                    .verify(tran)
                    ?;
