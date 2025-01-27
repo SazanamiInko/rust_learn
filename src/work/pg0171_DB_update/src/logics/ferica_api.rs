@@ -30,7 +30,7 @@ pub fn add_ferica(new_ferica:&str,add_ferica:&str)->Result<(),Box<dyn Error>>
   
    component.check_logical(&mut tran)?;
    _=component.execute(&mut tran);
-   tran.commit();
+   _=tran.commit();
     return Ok(());
 }
 
@@ -50,8 +50,8 @@ pub fn delete_ferica(delete_fericard:&str,applicant_ferica:&str)->Result<(),Box<
      let mut tran=pool.start_transaction(TxOpts::default())?;
 
     component.check_logical(&mut tran)?;
-     _=component.execute(&mut tran);
-    tran.commit();
+    _=component.execute(&mut tran);
+    _=tran.commit();
     return Ok(());
 
 }

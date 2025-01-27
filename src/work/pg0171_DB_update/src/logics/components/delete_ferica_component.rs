@@ -13,6 +13,8 @@ use crate::logics::components::common::consts;
 use mysql::Transaction;
 use std::error::Error;
 
+use super::verifys::logical_verifys::not_exists_card_verify::NotExistsCardVerify;
+
 ///Ferica削除コンポネント
 pub struct DeleteFericaComponent
 {
@@ -86,12 +88,12 @@ impl Component for DeleteFericaComponent
     fn check_logical(&self,tran:&mut Transaction)->Result<(),Box<dyn Error>>
     {
 
-        ExistsCardVerify::set(self.delete_ferica_label.as_str(),
+        NotExistsCardVerify::set(self.delete_ferica_label.as_str(),
                             self.delete_ferica.as_str()) 
                         .verify(tran)?;
 
 
-       ExistsCardVerify::set(self.applicant_ferica_label.as_str(),
+        NotExistsCardVerify::set(self.applicant_ferica_label.as_str(),
                              self.applicant_ferica.as_str()) 
                         .verify(tran)?;
     

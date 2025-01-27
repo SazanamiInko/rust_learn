@@ -39,7 +39,7 @@ impl LogicalVerify for ExistsCardVerify
     fn verify(&self,tran:&mut Transaction)->Result<(),Box<dyn std::error::Error>> {
         
       
-        if !card_util::has_master(self.target_card.as_str(), tran){
+        if card_util::has_master(self.target_card.as_str(), tran){
             return Err(Box::new(ExistsCardError::from(self)));
         }
 
