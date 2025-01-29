@@ -1,0 +1,8 @@
+/////////////////////////////////
+/// 
+/// 定数
+/// 
+/// /////////////////////////////
+
+pub const DELETED_ON:bool=true;
+pub const DELETE_OFF:bool=false;

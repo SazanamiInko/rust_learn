@@ -1,6 +1,0 @@
-[package]
-name = "pg0173_DB_delete"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
