@@ -172,6 +172,7 @@
  pg0174_opeland:演算子の上書き
  pg0175_webclent:WebClient（get）
  pg0177_sqlite_call:SQLiteへのバージョン確認
+ pg0178_asc:昇順ソート（浮動小数点）
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
@@ -189,7 +190,10 @@
  tr0014_zozo:ZOZOの障碍者採用ホームページの表示
  tr0015:ライブラリ
 
- 03_環境 envフォルダ
+03_AIサンプル
+　AI001_asc:昇順ソート（整数)
+
+ 04_環境 envフォルダ
 
  pokapokatei:ポカポカ亭売り上げ管理システム（基本情報Last Cobol問題ベース）の環境
  　　　　　　　OS:ubuntu
