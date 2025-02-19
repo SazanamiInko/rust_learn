@@ -1,0 +1,8 @@
+[package]
+name = "pg0180_sqlite_Create"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.39"
+rusqlite = { version = "0.33", features = ["bundled"] }

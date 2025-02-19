@@ -174,6 +174,7 @@
  pg0177_sqlite_call:SQLiteへのバージョン確認
  pg0178_asc:昇順ソート（浮動小数点）
  pg179_10p10:TOP10の取得
+ pg0180_sqlite_Create:SQLiteのDBファイル作成
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
@@ -194,6 +195,7 @@
 03_AIサンプル
 　ai001_asc:昇順ソート（整数)
   ai002_top5:top5の取得
+  ai0003_yyyymmdd_now:yyymmddの文字列取得
   
  04_環境 envフォルダ
 
