@@ -175,7 +175,8 @@
  pg0178_asc:昇順ソート（浮動小数点）
  pg179_10p10:TOP10の取得
  pg0180_sqlite_Create:SQLiteのDBファイル作成
- pg0181_pg0181_sqlite_insert:SQLiteへデータ登録
+ pg0181_sqlite_insert:SQLiteへデータ登録
+ pg0183_readline:ファイルを1行ずつ読み取り
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
