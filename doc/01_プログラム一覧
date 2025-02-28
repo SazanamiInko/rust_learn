@@ -176,6 +176,7 @@
  pg179_10p10:TOP10の取得
  pg0180_sqlite_Create:SQLiteのDBファイル作成
  pg0181_sqlite_insert:SQLiteへデータ登録
+ pg0182_uniq:重複除去とマージ
  pg0183_readline:ファイルを1行ずつ読み取り
 
 02_TRシリーズ->応用篇
@@ -198,6 +199,7 @@
 　ai001_asc:昇順ソート（整数)
   ai002_top5:top5の取得
   ai0003_yyyymmdd_now:yyymmddの文字列取得
+  ai004_firstordefault:最初を返す関数
   
  04_環境 envフォルダ
 
