@@ -196,13 +196,15 @@
  tr0013_sales_add:売り上げデータの登録（ポカポカ亭）
  tr0014_zozo:ZOZOの障碍者採用ホームページの表示
  tr0015:ライブラリ
+ tr0016:内部結合
 
 03_AIサンプル
 　ai001_asc:昇順ソート（整数)
   ai002_top5:top5の取得
   ai0003_yyyymmdd_now:yyymmddの文字列取得
   ai004_firstordefault:最初を返す関数
-  
+  ai005_last:Vectorの最後を返す
+
  04_環境 envフォルダ
 
  pokapokatei:ポカポカ亭売り上げ管理システム（基本情報Last Cobol問題ベース）の環境
