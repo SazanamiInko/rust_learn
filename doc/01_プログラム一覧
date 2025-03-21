@@ -184,6 +184,7 @@
  pg0188_dll_call:DLLの呼び出し
  pg0189_trait_def:トレイトのデフォルトメソッド
  pg0190_trait_extend:トレイトの継承
+ pg0192_file_exists:ファイルの存在調査
 
 02_TRシリーズ->応用篇
  tr0001_BMI:BMI値と理想体重を出力するプログラム
