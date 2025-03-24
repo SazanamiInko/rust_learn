@@ -1,0 +1,45 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tr0006_eratosthenes'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tr0006_eratosthenes",
+                    "--package=tr0006_eratosthenes"
+                ],
+                "filter": {
+                    "name": "tr0006_eratosthenes",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tr0006_eratosthenes'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tr0006_eratosthenes",
+                    "--package=tr0006_eratosthenes"
+                ],
+                "filter": {
+                    "name": "tr0006_eratosthenes",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
