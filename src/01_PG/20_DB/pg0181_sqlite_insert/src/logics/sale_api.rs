@@ -40,27 +40,27 @@ pub fn create_dbfile()->Result<(),Box<dyn Error>>
 pub fn add_sale_record(take_on:i32,take_off:i32)->Result<(),Box<dyn Error>>
 {
     //引数検査
-    let ev=EqualVerify::set("引数チェック",
+    let equal_verify=EqualVerify::set("引数チェック",
                                          "乗駅", 
                                          take_on, 
                                          "降駅", 
                                          take_off);
 
-    let from_range_v=RangeVerify::set("乗駅",
+    let from_range_verify=RangeVerify::set("乗駅",
                                                  take_on,
                                                   const_list::NORTH_STATION,
                                                   const_list::SOUTH_STATION);
 
-    let to_range_v=RangeVerify::set("降駅",
+    let to_range_verify=RangeVerify::set("降駅",
                                               take_off,
                                                const_list::NORTH_STATION,
                                                const_list::SOUTH_STATION);
     //同値検査
-    ev.verify()?;
+    equal_verify.verify()?;
 
     //範囲検査
-    from_range_v.verify()?;
-    to_range_v.verify()?;
+    from_range_verify.verify()?;
+    to_range_verify.verify()?;
 
     //売上データの登録
     let filename=util::get_file_name();
@@ -76,14 +76,10 @@ pub fn add_sale_record(take_on:i32,take_off:i32)->Result<(),Box<dyn Error>>
                                     datamodel.price,
                                     datamodel.distance])?;
     
-    match add_result {
-
-        Ok(())=>{},
-        Err(e)=>
-        {
-            println!("{:?}",e);
-        }
-        tran.ro
+    if add_result==0
+    {
+        _=tran.rollback();
+        return Ok(())
     }
 
     _=tran.commit();
